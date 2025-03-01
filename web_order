@@ -1,0 +1,59 @@
+
+Hero Section – Catchy headline, brief description, and a call-to-action button.
+Services Section – List of cleaning services with icons.
+Why Choose Us – Highlight key benefits (e.g., eco-friendly, reliable staff).
+Testimonials – Customer reviews for social proof.
+Contact Form – Easy way for clients to request a quote.
+Footer – Social media links and contact details.
+
+
+// color combo
+
+
+1. Sleek & Professional
+Background: bg-gray-50
+Text: text-gray-900
+Button: bg-indigo-600 text-white
+Hover Button: hover:bg-indigo-700
+
+
+2. Natural & Soothing
+Background: bg-emerald-50
+Text: text-emerald-900
+Button: bg-emerald-600 text-white
+Hover Button: hover:bg-emerald-700
+
+
+3. Bright & Friendly
+Background: bg-yellow-50
+Text: text-yellow-900
+Button: bg-yellow-600 text-white
+Hover Button: hover:bg-yellow-700
+
+
+4. Elegant & Subtle
+Background: bg-pink-50
+Text: text-pink-900
+Button: bg-pink-600 text-white
+Hover Button: hover:bg-pink-700
+
+
+5. Soft & Inviting
+Background: bg-lime-50
+Text: text-lime-900
+Button: bg-lime-600 text-white
+Hover Button: hover:bg-lime-700
+
+
+6. Crisp & Refreshing
+Background: bg-cyan-50
+Text: text-cyan-900
+Button: bg-cyan-600 text-white
+Hover Button: hover:bg-cyan-700
+
+
+7. Warm & Cozy
+Background: bg-orange-50
+Text: text-orange-900
+Button: bg-orange-600 text-white
+Hover Button: hover:bg-orange-700
