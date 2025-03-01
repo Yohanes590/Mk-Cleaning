@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { BiMenu } from "react-icons/bi";
 import { useState } from "react";
 import { Link, Element } from 'react-scroll';
+import "./animation-js";
 const NavBar = () => {
     const [increaseWidth, setWidth] = useState(true)
     const openMenu = () => {
@@ -16,16 +17,16 @@ const NavBar = () => {
     }
 
     return (<>
-        <div name="/" className="text-[10px] md:text-[16px] w-full h-12 bg-yellow-500 flex justify-evenly items-center cursor-default">
+        <div name="home" id="sub-nav" className="transition-all duration-1000 mt-[-50px] text-[10px] md:text-[16px] w-full h-12 bg-yellow-500 flex justify-evenly items-center cursor-default">
             <div className="flex items-center text-white justify-around">
                 <FaPhoneSquareAlt />  <p> +251912103308</p>&nbsp;&nbsp;
                 <MdEmail />&nbsp; <p>mulugetakassaw71@gmail.com</p>
             </div>
         </div>
-        <div className="w-full h-20 bg-white flex items-center justify-evenly cursor-default sticky z-50 top-0">
+        <div id="nav-bar" className=" opacity-0 duration-100 transition-all w-full h-0 flex items-center justify-evenly cursor-default sticky z-50 top-0">
             <div className="text-[25px] "><h2>Mk Cleaing <span className="text-yellow-500">Service</span></h2></div>
             <div className="hidden md:block">
-                <Link to="/" offset={-79} smooth={true} duration={200} className="ml-8 cursor-pointer text-yellow-400 hover:border-b transition-all duration-600 font-bold">Home</Link>
+                <Link to="home" offset={-79} smooth={true} duration={200} className="ml-8 cursor-pointer text-yellow-400 hover:border-b transition-all duration-600 font-bold">Home</Link>
                 <Link to="about" offset={-79} smooth={true} duration={200} className="ml-8 cursor-pointer text-yellow-400 hover:border-b transition-all duration-600 font-bold">About</Link>
                 <Link to="service" offset={-79} smooth={true} duration={200} className="ml-8 cursor-pointer text-yellow-400 hover:border-b transition-all duration-600 font-bold">Service</Link>
                 <Link to="portfolio" offset={-79} smooth={true} duration={200} className="ml-8 cursor-pointer text-yellow-400 hover:border-b font-bold">Portfolio</Link>

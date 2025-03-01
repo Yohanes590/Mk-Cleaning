@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react"
 import { InfoArray } from "./main-json"
+import { portScroll } from './animation-js'
 function PortFolio() {
     const [arrayMethod, setArray] = useState([])
     useEffect(() => {
         setArray(InfoArray)
     }, [])
-
+    portScroll()
 
     const FetchPortfolio = (types) => {
         document.getElementById("show-Array").style.opacity = "0"
@@ -19,7 +20,7 @@ function PortFolio() {
     }
 
     return (<>
-        <div name="portfolio" id="auto-height" className="h-auto transition-all duration-600">
+        <div name="portfolio" id="auto-height" className="h-auto transition-all duration-1000 opacity-0">
             <center>
                 <div className="w-[90%] md:w-[80%] h-auto lg:h-[60px] bg-amber-300 mt-[40px] rounded-[5px] flex items-center justify-evenly flex-wrap">
                     <div className="cursor-pointer w-[100%] lg:w-[250px] bg-amber-400 duration-600 lg:bg-white transition-all hover:bg-amber-600 h-[40px] md:h-[35px] flex justify-center items-center text-white lg:text-black hover:text-white" onClick={() => FetchPortfolio('home')}><h2>HOME CLEANING</h2></div>

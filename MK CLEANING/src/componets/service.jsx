@@ -2,12 +2,12 @@ import { MdCleaningServices } from "react-icons/md";
 import sofa from '../assets/sofa.jpg'
 import office from '../assets/office.jpg'
 import deep from '../assets/deep.jpg'
+import { serviceScroll } from "./animation-js";
 function ServiceCompo() {
+    serviceScroll()
     return (<>
-
         <div name="service" className="h-auto xl:h-screen bg-yellow-50 flex flex-wrap justify-evenly items-center">
-
-            <div className="w-[100%] lg:w-[400px] overflow-hidden h-[650px] text-yellow-500 bg-white border-b-10 border-yellow-500 transition-all duration-600 hover:bg-yellow-400 hover:text-white cursor-default">
+            <div id="card1" className="mt-[100px] opacity-0 w-[100%] lg:w-[400px] overflow-hidden h-[650px] text-yellow-500 bg-white border-b-10 border-yellow-500 transition-all duration-600 hover:bg-yellow-400 hover:text-white cursor-default">
                 <img src={sofa} className=" h-[300px] w-[100%] lg:w-[400px] object-cover brightness-[50%] transition-all duration-500 hover:brightness-[100%] hover:scale-[1.05]" />
                 <div className="text-center pt-[30px]">
                     <h1 className="text-[35px] flex justify-center items-center">SOFA CLEANING &nbsp;<MdCleaningServices /></h1>
@@ -17,11 +17,7 @@ function ServiceCompo() {
                         dirt, and allergens, leaving your sofa fresh, hygienic, and looking brand new.<br /></p>
                 </div>
             </div>
-
-
-
-
-            <div className="w-[100%] lg:w-[400px] overflow-hidden h-[650px] text-yellow-500 bg-white border-b-10 border-yellow-500 transition-all duration-600 hover:bg-yellow-400 hover:text-white cursor-default">
+            <div id="card2" className="mt-[100px] opacity-0 w-[100%] lg:w-[400px] overflow-hidden h-[650px] text-yellow-500 bg-white border-b-10 border-yellow-500 transition-all duration-600 hover:bg-yellow-400 hover:text-white cursor-default">
                 <img src={office} className=" h-[300px] w-[100%] lg:w-[400px] object-cover brightness-[50%] transition-all duration-500 hover:brightness-[100%] hover:scale-[1.05]" />
                 <div className="text-center pt-[30px]">
                     <h1 className="text-[35px] flex justify-center items-center">Office Cleaning &nbsp;<MdCleaningServices /></h1>
@@ -31,9 +27,7 @@ function ServiceCompo() {
                         office cleaning service. We ensure a healthy environment by sanitizing.<br /></p>
                 </div>
             </div>
-
-
-            <div className="w-[100%] lg:w-[400px] overflow-hidden h-[650px] text-yellow-500 bg-white border-b-10 border-yellow-500 transition-all duration-600 hover:bg-yellow-400 hover:text-white cursor-default">
+            <div id="card3" className="mt-[100px] opacity-0 w-[100%] lg:w-[400px] overflow-hidden h-[650px] text-yellow-500 bg-white border-b-10 border-yellow-500 transition-all duration-600 hover:bg-yellow-400 hover:text-white cursor-default">
                 <img src={deep} className=" h-[300px] w-[100%] lg:w-[400px] object-cover brightness-[50%] transition-all duration-500 hover:brightness-[100%] hover:scale-[1.05]" />
                 <div className="text-center pt-[30px]">
                     <h1 className="text-[35px] flex justify-center items-center">Deep Cleaning &nbsp;<MdCleaningServices /></h1>
@@ -43,9 +37,6 @@ function ServiceCompo() {
                         cleaning inside cabinets to scrubbing floors, we handle all the details for a seamless transition.<br /></p>
                 </div>
             </div>
-
-
-
         </div>
 
     </>)
