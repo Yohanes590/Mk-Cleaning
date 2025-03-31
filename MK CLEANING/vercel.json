@@ -10,7 +10,7 @@
   ],
   "routes": [
     {
-      "src": "/sitemap.xml",
+      "src": "/sitemap_4509961.xml",
       "headers": {
         "Cache-Control": "no-store"
       }
